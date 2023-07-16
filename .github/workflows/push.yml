@@ -25,3 +25,4 @@ jobs:
           aws_bucket: ${{ secrets.AWS_BUCKET }}
           source_dir: dist
           endpoint: https://storage.yandexcloud.net
+          destination_dir: ''
