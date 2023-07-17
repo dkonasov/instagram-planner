@@ -75,6 +75,9 @@ export const IndexPage: Component = () => {
 
   return (
     <Show when={getImages()} fallback="Loading...">
+      <Show when={getImages()?.length === 0}>
+        <div>No images</div>
+      </Show>
       <div>
         <For each={getImages()!}>
           {(image, index) => (
